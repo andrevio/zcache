@@ -1,3 +1,7 @@
+/**
+ * @license: free, as in "free beer"
+ * @author: Andre Violentyev
+ */
 (function(){
     "use strict";
 
