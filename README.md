@@ -4,7 +4,7 @@ It uses a "linked hash map" data structure, which allows for constant time (or a
 ## Motivation
 Often cache expiration policy is implemented using a queue. That approach, however, is not efficient when needing to reset 
 the expiration timer since the whole queue needs to be scanned to find the corresponding element. ZCache, on the other hand,
-uses a linked hash map that acts both as a hash map and a linked list. When accessing an element bay calling cache.get(key),
+uses a linked hash map that acts both as a hash map and a linked list. When accessing an element by calling cache.get(key),
 that element is then places to the back of the list. This approach accumilates all of the expired items at the front of the
 list, allowing for efficient removal of expired items.
 
