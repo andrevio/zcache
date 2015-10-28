@@ -1,5 +1,5 @@
 # ZCache - simple yet high performance JavaScript cache library
-It uses a "linked hash map" data structure, which allows for constant time (or amortized O(1) notation) for all operations.
+It uses a "linked hash map" data structure, which allows for constant time (or amortized O(1) notation) for all operations, even when finding and removing expired items.
 
 ## Motivation
 Often cache expiration policy is implemented using a queue. That approach, however, is not efficient when needing to reset 
